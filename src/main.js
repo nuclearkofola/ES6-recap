@@ -53,3 +53,24 @@ console.log(doMath( undefined,2,3));
   users.printAll();
 })();
 
+
+// Method - this is a function stored in an object
+var rich = {
+  name: "Rich Richerson",
+  disease: "richitis",
+  cry: function() {
+    console.log("Waaah, my wallet is so heavy!");
+  }
+}
+
+rich.cry();
+
+
+// Fuction, this = global object (window in browsers)
+// strick mode = undefined
+
+function globalCry() {
+  console.log();
+}
+
+globalCry();
