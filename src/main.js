@@ -74,3 +74,52 @@ function globalCry() {
 }
 
 globalCry();
+
+
+// constructor, this = rich
+
+var Fraud = function(name, disease) {
+  this.name = name;
+  this.disease = disease;
+}
+
+var rich = new Fraud ("Rich Richerson", "richitis");
+console.log(rich.name);
+
+//call, apply 
+var redLeatterMedia = [ "Mike" , "Jay", "Rich" ];
+
+function kill() {
+  console.log(this);  
+}
+
+kill();
+kill.call(redLeatterMedia) // this = redLeatterMedia
+
+// Arrow function no this  
+
+function FraudHealth() {
+  this.name = "Rich Richerson";
+  this.disease = "richitis";
+  this.health = 23;
+//pokud nepoužiju arrow function, this v setInterval bude ukazovat na global object (window)
+
+// bind(this)  nebo arrow function
+
+// var self = this;  // old way
+
+// máme několik možností jak vyřešit this v callbacku
+// 1. arrow function
+// 2. bind(this)
+// 3. self = this
+
+
+  setInterval(  () => {
+    this.health--;
+    console.log(this.health);
+  },1000 );
+// arrow function je lepší používat při meně složitých funkcích - přehlednost
+
+  }
+  var rich = new FraudHealth();
+
