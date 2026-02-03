@@ -149,3 +149,51 @@ for ( var i=1; i<=5; i++) {
 
 // z konstantě mužeme měnit  obsah pole nebo objektu, ale nemůžeme přepsat samotnou konstantu 
 
+// dobre je použít styleguide pro psani kodu 
+// 
+// Getters, Setters
+// 
+
+let legend = {
+  first: "strašo",
+  name: "papjla",
+
+  // velke pismeno na zacatku a bez zavorek, aby se to chovalo jako property a ne jako metoda
+  get firstName() {
+    return this.first.charAt(0).toUpperCase() + this.first.slice(1);
+  },
+  get lastName() {
+    return this.last.charAt(0).toUpperCase() + this.last.slice(1);
+  },
+
+  // spoji firstName a lastName do jednoho stringu
+  get fullName() {
+    return this.firstName + " " + this.lastName;
+  },
+};
+
+//Setters
+let legend = {
+  _first: "janecek",
+  _last: "Fritak",
+  _oldness: 15,
+
+  get age() {
+    return this._oldness;
+  },
+
+  // validation - pokud není číslo, vypíše chybu a nenastaví hodnotu
+  set age(val) {
+    if (!Number.isInteger(val)) {
+      return console.error(`that's not a number, dumbass`);
+    }
+
+    this._oldness = val;
+  },
+};
+
+
+// proč používat gettery a settery?
+// 1. umožňují nám kontrolovat přístup k vlastnostem objektu, což nám pomáhá předejít chybám a zlepšit bezpečnost kódu
+// 2. umožňují nám definovat logiku pro získávání a nastavování hodnot, což nám pomáhá udržet kód čistý a přehledný
+// 3. umožňují nám vytvářet virtuální vlastnosti, které nejsou přímo uloženy v objektu, ale jsou odvozeny z jiných vlastností nebo výpočtů, což nám pomáhá zlepšit flexibilitu a rozšiřitelnost kódu  
