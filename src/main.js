@@ -122,4 +122,30 @@ function FraudHealth() {
 
   }
   var rich = new FraudHealth();
+        
+// let vyhoda vytvaří nové hodnoty
+
+for ( var i=1; i<=5; i++) {
+  setTimeout( function() {
+    console.log( i);
+  }, i*1000);
+}
+  //vypíše se 6x číslo 6 protože var je funkčně scoped
+
+  for ( let j=1; j<=5; j++) {
+    setTimeout( function() {
+      console.log( j);
+    }, j*1000);
+  
+    //vypíše se čísla 1-5 protože let je block scoped
+  }
+
+  // v cyklech je lepší používat let protože nám zajistí správné hodnoty v callbacku
+
+ // proč použít const?
+// 1. nemůžeme přepsat hodnotu, což nám pomůže předejít chybám
+// 2. zlepšuje čitelnost kódu, protože hned vidíme, že se jedná o konstantu
+// 3. pomáhá optimalizovat výkon, protože JavaScript engine může lépe optimalizovat kód, který používá konstanty  
+
+// z konstantě mužeme měnit  obsah pole nebo objektu, ale nemůžeme přepsat samotnou konstantu 
 
