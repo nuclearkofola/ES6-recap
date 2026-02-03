@@ -197,3 +197,19 @@ let legend = {
 // 1. umožňují nám kontrolovat přístup k vlastnostem objektu, což nám pomáhá předejít chybám a zlepšit bezpečnost kódu
 // 2. umožňují nám definovat logiku pro získávání a nastavování hodnot, což nám pomáhá udržet kód čistý a přehledný
 // 3. umožňují nám vytvářet virtuální vlastnosti, které nejsou přímo uloženy v objektu, ale jsou odvozeny z jiných vlastností nebo výpočtů, což nám pomáhá zlepšit flexibilitu a rozšiřitelnost kódu  
+
+
+//Objetk - object literal - objekt s zavorkami, který obsahuje vlastnosti a metody
+
+// pokud je vlastnost je jako promena muzeme zkratit
+let playerName = "Honza Kotrbek"; 
+
+let player = {
+  playerName,
+  getName() {
+    return this.playerName;
+  }
+
+ }
+player.getName(); // Honza Kotrbek
+ //
