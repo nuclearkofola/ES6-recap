@@ -259,3 +259,20 @@ let obj3 = { ...obj1, ...obj2 }; // { name: "Petr", age: 30, city: "Prague" }
 //Spread se používá pro kopírování pole nebo objektu, protože nám umožňuje vytvořit nový objekt nebo pole bez reference na původní objekt nebo pole, což nám pomáhá předejít chybám a zlepšit bezpečnost kódu 
 
 
+
+
+
+//Defailtní parametry vs default operator
+
+
+function discount (price, percent) {
+  percent = (percent === undefined) ? 10 : percent;
+  return price * (1 - percent / 100);
+}
+// zapiš po staru 
+
+function discount(price, percent = 10) {
+  return price * (1 - percent / 100);
+}
+
+// defaultní parametry nám umožňují nastavit výchozí hodnotu pro parametr, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
