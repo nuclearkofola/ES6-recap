@@ -276,3 +276,19 @@ function discount(price, percent = 10) {
 }
 
 // defaultní parametry nám umožňují nastavit výchozí hodnotu pro parametr, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+
+// teplate string ale spíš je to SMART STRING, protože nám umožňuje vytvářet multi-line stringy a interpolovat proměnné a výrazy do stringu, což nám pomáhá zlepšit čitelnost kódu a usnadnit práci s řetězci
+
+let title = 'hot piss';
+  
+`<article>
+    <h1>${title}</h1>
+</article>`
+  
+let artist = 'Kolowrat',
+    song = 'Ja a slečna Ts';
+  
+`Pieseň od ${artist} sa volá ${song} a 2 + 2 je ${ 2+2 }`.toUpperCase();
+
+// ```` - alt+96 - backticks nám umožňují vytvářet multi-line stringy a interpolovat proměnné a výrazy do stringu, což nám pomáhá zlepšit čitelnost kódu a usnadnit práci s řetězc 
