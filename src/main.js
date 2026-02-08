@@ -292,3 +292,176 @@ let artist = 'Kolowrat',
 `Pieseň od ${artist} sa volá ${song} a 2 + 2 je ${ 2+2 }`.toUpperCase();
 
 // ```` - alt+96 - backticks nám umožňují vytvářet multi-line stringy a interpolovat proměnné a výrazy do stringu, což nám pomáhá zlepšit čitelnost kódu a usnadnit práci s řetězc 
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_templates
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring
+
+// NEW Array methods
+
+let arr = [1, 2, 3, 4, 5];
+
+arr.includes(3); // true
+arr.includes(6); // false
+
+// includes nám umožňuje zjistit, zda pole obsahuje určitou hodnotu, což nám pomáhá předejít chybám a zlepšit čitelnost kódu  
+
+
+
+
+// Metody pole - find, findIndex, map, filter, Array.from, Array.of, fill, flat, flatMap, some, every, reduce, reduceRight, sort, reverse, join, split, slice, splice, concat, push, pop, shift, unshift, indexOf, lastIndexOf, forEach
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods 
+
+//find nám umožňuje najít první prvek v poli, který splňuje určitou podmínku, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//findIndex nám umožňuje najít index prvního prvku v poli, který splňuje určitou podmínku, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//map nám umožňuje vytvořit nové pole, které obsahuje výsledky volání funkce pro každý prvek v původním poli, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//filter nám umožňuje vytvořit nové pole, které obsahuje pouze prvky z původního pole, které splňují určitou podmínku, což nám pomáhá předejít chybám a zlepšit čitelnost kódu  
+
+  //Array.from nám umožňuje vytvořit nové pole z iterovatelného objektu nebo pole-like objektu, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//Array.of nám umožňuje vytvořit nové pole z jednotlivých argumentů, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//fill nám umožňuje naplnit všechny prvky pole určitou hodnotou, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//flat nám umožňuje zploštit pole do určité hloubky, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//flatMap nám umožňuje nejprve mapovat každý prvek na nový prvek a poté zploštit výsledné pole o jednu úroveň, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//some nám umožňuje zjistit, zda alespoň jeden prvek v poli splňuje určitou podmínku, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//every nám umožňuje zjistit, zda všechny prvky v poli splňují určitou podmínku, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//reduce nám umožňuje redukovat pole na jedinou hodnotu pomocí funkce, která se aplikuje na každý prvek pole, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//reduceRight nám umožňuje redukovat pole na jedinou hodnotu pomocí funkce, která se aplikuje na každý prvek pole zprava, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//sort nám umožňuje seřadit prvky pole podle určitého kritéria, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//reverse nám umožňuje obrátit pořadí prvků v poli, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//join nám umožňuje spojit všechny prvky pole do jednoho stringu s určitým oddělovačem, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//split nám umožňuje rozdělit string na pole podle určitého oddělovače, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//slice nám umožňuje vytvořit nové pole obsahující část původního pole, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//splice nám umožňuje změnit obsah pole odstraněním nebo přidáním prvků, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//concat nám umožňuje spojit dvě nebo více polí do jednoho nového pole, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//push nám umožňuje přidat jeden nebo více prvků na konec pole, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//pop nám umožňuje odstranit poslední prvek z pole a vrátit ho, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//shift nám umožňuje odstranit první prvek z pole a vrátit ho, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//unshift nám umožňuje přidat jeden nebo více prvků na začátek pole, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//indexOf nám umožňuje zjistit index prvního výskytu určité hodnoty v poli, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//lastIndexOf nám umožňuje zjistit index posledního výskytu určité hodnoty v poli, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+//forEach nám umožňuje provést funkci pro každý prvek pole, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+// Iteratory nám umožňují procházet kolekce dat, jako jsou pole, objekty nebo řetězce, pomocí speciálního protokolu, který definuje způsob, jakým se data iterují, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+// Generátory nám umožňují vytvářet iterátory pomocí funkce, která může být pozastavena a znovu spuštěna, což nám pomáhá předejít chybám a zlepšit čitelnost kódu
+
+
+
+ const users = [ "Mike", "Strajk", "Cajk", "franta", "Petr", "Honza", "Karel", "Motyka", "Vojta", "Jirka", "Pavel", "Martin", "Adam", "Eliška", "Tereza", "Lucie", "Jan", "Tomáš", "Jakub", "David", "Jan", "Tomáš", "Jakub", "David", "Jan", "Tomáš", "Jakub", "David", "Jan", "Tomáš", "Jakub", "David", "Jan", "Tomáš", "Jakub", "David", "Jan", "Tomáš", "Jakub", "David", "Jan", "Tomáš", "Jakub", "David", "Jan", "Tomáš", "Jakub", "David", "Jan", "Tomáš", "Jakub", "David" ]; 
+
+ users.includes("Mike"); // true
+
+ users.find( name => name.length > 5 ); // "Strajk"
+ 
+ users.findIndex( name => name.length > 5 ); // 1
+
+users.map( name => name.toUpperCase() ); // ["MIKE", "STRAJK", "CAJK", "FRANTA", "PETR", "HONZA", "KAREL", "MOTYKA", "VOJTA", "JIRKA", "PAVEL", "MARTIN", "ADAM", "ELIŠKA", "TEREZA", "LUCIE", "JAN", "TOMÁŠ", "JAKUB", "DAVID", ...]
+
+users.filter( name => name.length > 5 ); // ["Strajk", "Franta", "Petr", "Honza", "Karel", "Motyka", "Vojta", "Jirka", "Pavel", "Martin", "Adam", "Eliška", "Tereza", "Lucie", "Jan", "Tomáš", "Jakub", "David", ...] 
+
+users.reduce( (acc, name) => acc + name.length, 0 ); // 1200
+
+users.forEach( name => console.log(name) ); // vypíše všechny jména do konzole
+
+users.Array.from( users, name => name.toUpperCase() ); // ["MIKE", "STRAJK", "CAJK", "FRANTA", "PETR", "HONZA", "KAREL", "MOTYKA", "VOJTA", "JIRKA", "PAVEL", "MARTIN", "ADAM", "ELIŠKA", "TEREZA", "LUCIE", "JAN", "TOMÁŠ", "JAKUB", "DAVID", ...]
+
+users.Array.of( "Mike", "Strajk", "Cajk", "franta", "Petr", "Honza", "Karel", "Motyka", "Vojta", "Jirka", "Pavel", "Martin", "Adam", "Eliška", "Tereza", "Lucie", "Jan", "Tomáš", "Jakub", "David" ); // ["Mike", "Strajk", "Cajk", "franta", "Petr", "Honza", "Karel", "Motyka", "Vojta", "Jirka", "Pavel", "Martin", "Adam", "Eliška", "Tereza", "Lucie", "Jan", "Tomáš", "Jakub", "David"]
+
+users.fill( "Unknown" ); // ["Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", ...]
+
+users.flat(); // ["Mike", "Strajk", "Cajk", "franta", "Petr", "Honza", "Karel", "Motyka", "Vojta", "Jirka", "Pavel", "Martin", "Adam", "Eliška", "Tereza", "Lucie", "Jan", "Tomáš", "Jakub", "David"]
+
+users.flatMap( name => name.split("") ); // ["M", "i", "k", "e", "S", "t", "r", "a", "j", "k", "C", "a", "j", "k", "f", "r", "a", "n", "t", "a", ...]
+
+users.some( name => name.length > 5 ); // true
+
+users.every( name => name.length > 5 ); // false
+
+users.sort(); // ["Adam", "Eliška", "Franta", "Honza", "Jakub", "Jirka", "Karel", "Lucie", "Martin", "Mike", "Motyka", "Pavel", "Petr", "Strajk", "Tereza", "Tomáš", "Vojta", "Jan", ...]
+
+users.reverse(); // ["Jan", "Vojta", "Tomáš", "Tereza", "Strajk", "Petr", "Pavel", "Motyka", "Mike", "Martin", "Lucie", "Karel", "Jirka", "Jakub", "Honza", "Franta", "Eliška", "Adam"]
+
+users.join( ", " ); // "Mike, Strajk, Cajk, franta, Petr, Honza, Karel, Motyka, Vojta, Jirka, Pavel, Martin, Adam, Eliška, Tereza, Lucie, Jan, Tomáš, Jakub, David"
+
+users.split( ", " ); // ["Mike", "Strajk", "Cajk", "franta", "Petr", "Honza", "Karel", "Motyka", "Vojta", "Jirka", "Pavel", "Martin", "Adam", "Eliška", "Tereza", "Lucie", "Jan", "Tomáš", "Jakub", "David"]
+
+users.slice( 0, 5 ); // ["Mike", "Strajk", "Cajk", "franta", "Petr"]      
+
+
+users.push( "New User" ); // ["Mike", "Strajk", "Cajk", "franta", "Petr", "Honza", "Karel", "Motyka", "Vojta", "Jirka", "Pavel", "Martin", "Adam", "Eliška", "Tereza", "Lucie", "Jan", "Tomáš", "Jakub", "David", "New User"]
+
+users.pop(); // ["Mike", "Strajk", "Cajk", "franta", "Petr", "Honza", "Karel", "Motyka", "Vojta", "Jirka", "Pavel", "Martin", "Adam", "Eliška", "Tereza", "Lucie", "Jan", "Tomáš", "Jakub", "David"]
+
+users.shift(); // ["Strajk", "Cajk", "franta", "Petr", "Honza", "Karel", "Motyka", "Vojta", "Jirka", "Pavel", "Martin", "Adam", "Eliška", "Tereza", "Lucie", "Jan", "Tomáš", "Jakub", "David"]
+
+users.unshift( "Mike" ); // ["Mike", "Strajk", "Cajk", "franta", "Petr", "Honza", "Karel", "Motyka", "Vojta", "Jirka", "Pavel", "Martin", "Adam", "Eliška", "Tereza", "Lucie", "Jan", "Tomáš", "Jakub", "David"]
+
+users.indexOf( "Petr" ); // 4
+
+users.lastIndexOf( "Jan" ); // 16
+
+users.forEach( name => console.log(name) ); // vypíše všechny jména do konzole
+
+
+
+
+Array.from( users, name => name.toUpperCase() ); // ["MIKE", "STRAJK", "CAJK", "FRANTA", "PETR", "HONZA", "KAREL", "MOTYKA", "VOJTA", "JIRKA", "PAVEL", "MARTIN", "ADAM", "ELIŠKA", "TEREZA", "LUCIE", "JAN", "TOMÁŠ", "JAKUB", "DAVID"]
+
+Array.of( "Mike", "Strajk", "Cajk", "franta", "Petr", "Honza", "Karel", "Motyka", "Vojta", "Jirka", "Pavel", "Martin", "Adam", "Eliška", "Tereza", "Lucie", "Jan", "Tomáš", "Jakub", "David" ); // ["Mike", "Strajk", "Cajk", "franta", "Petr", "Honza", "Karel", "Motyka", "Vojta", "Jirka", "Pavel", "Martin", "Adam", "Eliška", "Tereza", "Lucie", "Jan", "Tomáš", "Jakub", "David"]
+
+users.fill( "Unknown" ); // ["Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", ...]
+
+users.flat(); // ["Mike", "Strajk", "Cajk", "franta", "Petr", "Honza", "Karel", "Motyka", "Vojta", "Jirka", "Pavel", "Martin", "Adam", "Eliška", "Tereza", "Lucie", "Jan", "Tomáš", "Jakub", "David"]
+
+users.flatMap( name => name.split("") ); // ["M", "i", "k", "e", "S", "t", "r", "a", "j", "k", "C", "a", "j", "k", "f", "r", "a", "n", "t", "a", ...]
+
+users.some( name => name.length > 5 ); // true
+
+users.every( name => name.length > 5 ); // false
+
+users.sort(); // ["Adam", "Eliška", "Franta", "Honza", "Jakub", "Jirka", "Karel", "Lucie", "Martin", "Mike", "Motyka", "Pavel", "Petr", "Strajk", "Tereza", "Tomáš", "Vojta", "Jan", ...]
+
+users.reverse(); // ["Jan", "Vojta", "Tomáš", "Tereza", "Strajk", "Petr", "Pavel", "Motyka", "Mike", "Martin", "Lucie", "Karel", "Jirka", "Jakub", "Honza", "Franta", "Eliška", "Adam"]
+
+users.copyWithin( 0, 5, 10 ); // ["Pavel", "Martin", "Adam", "Eliška", "Tereza", "Lucie", "Jan", "Tomáš", "Jakub", "David", "Pavel", "Martin", "Adam", "Eliška", "Tereza", "Lucie", "Jan", "Tomáš", "Jakub", "David"]
+
+
+
+const users2 = [
+  { name: "Franta", administrator: true },
+  { name: "Honza", administrator: false },
+  { name: "Petr" },
+]
+users.some( user => "administrator" in user ); // true
+users.every( user => "administrator" in user ); // false
+
+users2.values(); // ["Franta", "Honza", "Petr"]
+users2.keys(); // [0, 1, 2]
+users2.entries(); // [[0, { name: "Franta", administrator: true }], [1, { name: "Honza", administrator: false }], [2, { name: "Petr" }]]
+
